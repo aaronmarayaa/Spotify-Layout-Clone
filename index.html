@@ -4,15 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify - Web Player: Music for everyone</title>
+
+        <link rel="icon" href="assets/images/spotify.png">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="assets/css/login.css">
+
+        <link rel="stylesheet" href="assets/css/main-page.css">
     </head>
     <body>
-        <section class="login">
-            <div>
-
+        <section class="login" id="login">
+            <div class="login-page">
+                <div class="title">
+                    <img src="assets/images/spotify-h.png" alt="">
+                    <h1>Log in to Spotify</h1>
+                </div>
+                <div class="applications">
+                    <button>
+                        <img src="assets/images/googleicon.svg" alt="">
+                        Continue with Google
+                    </button>
+                    <button>
+                        <img src="assets/images/facebookicon.svg" alt="">
+                        Continue with Facebook
+                    </button>
+                    <button>
+                        <img src="assets/images/appleicon.svg" alt="">
+                        Continue with Apple
+                    </button>
+                </div>
+                <form onsubmit="return showMain(event)">
+                    <div class="box">
+                        <label for="username">Email or Username</label>
+                        <input type="text" id="username"  placeholder="Email or Username">
+                    </div>
+                    <div class="box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <div>
+                            <input type="checkbox" id="show" onclick="showPassword()">
+                            <label for="show">Show Password</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Log in" class="login-btn">
+                </form>
             </div>
         </section>
-        <main>
+        <main id="main" class="main">
+            <nav>
+                <div class="logo">
+                    <div>
+                        <img src="assets/images/spotify-h.png" alt="">
+                    </div>
+                    <div class="house">
+                        <img src="assets/images/house.png" alt="">
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="What do you want to play?">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="premium">
+                        Explore Premium
+                    </div>
+                </div>
+            </nav>
 
+            <article class="home">
+                <div class="library">
+                    <div><h1>Your library</h1></div>
+                    <div class="artist">
+                        <p>artist</p>
+                        <p>Podcasts & Shows</p>
+                    </div>
+                    <div>Recent</div>
+                    <div class="library-card">
+                        <img src="assets/images/liked-songs-64.png" alt="">
+                        <div>
+                            <h3>Liked Songs</h3>
+                            <p>Playlist - 1 song</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <img src="assets/images/bookmark.png" alt="">
+                        <div>
+                            <h3>Your episodes</h3>
+                            <p>Saved and downloaded episodes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+
+                </div>
+                <div>
+
+                </div>
+            </article>
         </main>
     </body>
+    <script src="assets/js/script.js"></script>
 </html>

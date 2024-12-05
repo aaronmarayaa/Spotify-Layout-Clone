@@ -1,0 +1,88 @@
+.main {
+    display: none;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+nav .logo {
+    display: flex;
+    width: 50%;
+}
+nav .logo img {
+    width: 3rem;
+    margin: 0 1rem;
+}
+
+nav .logo .house {
+    padding: 0.7rem 0;
+    transition: 300ms;
+}
+nav .logo .house:hover {
+    background-color: rgb(53, 53, 53);
+    border-radius: 5rem;
+}
+
+nav .logo .house img{
+    width: 2rem;
+
+}
+
+nav .logo .search{
+    margin: 0.5rem;
+    width: 100%;
+}
+
+nav .logo .search input{
+    background-color: #1f1f1f;
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+nav .right .premium {
+    background-color: white;
+    border-radius: 5rem;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+nav .right .premium:hover {
+    transform: scale(1.05);
+}
+
+/* Home */
+.home {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.home .library .artist {
+    display: flex;
+}
+.home .library .artist p{
+    background-color: #2a2a2a;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+.home .library .artist p:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+.home .library .library-card {
+    display: flex;
+}
+.home .library .library-card img{
+    border-radius: 0.5rem;
+}
