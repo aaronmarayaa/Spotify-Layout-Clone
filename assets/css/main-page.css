@@ -6,41 +6,40 @@
     padding: 0.5rem;
 }
 
-nav {
+.main .topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-nav .logo {
+.main .topnav .logo {
     display: flex;
     width: 50%;
 }
-nav .logo img {
+.main .topnav .logo img {
     width: 3rem;
     margin: 0 1rem;
 }
 
-nav .logo .house {
+.main .topnav .logo .house {
     padding: 0.7rem 0;
     transition: 300ms;
 }
-nav .logo .house:hover {
+.main .topnav .logo .house:hover {
     background-color: rgb(53, 53, 53);
     border-radius: 5rem;
 }
 
-nav .logo .house img{
+.main .topnav .logo .house img{
     width: 2rem;
-
 }
 
-nav .logo .search{
+.main .topnav .logo .search{
     margin: 0.5rem;
     width: 100%;
 }
 
-nav .logo .search input{
+.main .topnav .logo .search input{
     background-color: #1f1f1f;
     border-radius: 3rem;
     width: 100%;
@@ -50,33 +49,51 @@ nav .logo .search input{
     font-size: 1.2rem;
 }
 
-nav .right .premium {
+.main .topnav .right .premium {
     background-color: white;
     border-radius: 5rem;
     color: black;
     padding: 0.5rem 1rem;
 }
-nav .right .premium:hover {
+.main .topnav .right .premium:hover {
     transform: scale(1.05);
 }
 
 /* Home */
 .home {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.home .music, .library {
     background-color: #121212;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin: 0.5rem;
+}
+
+/* library */
+.home p{
+    font-size: 0.8rem;
+    color: rgb(159, 159, 159);
+}
+
+.library {
+    flex: 1;
 }
 
 .home .library .artist {
     display: flex;
 }
-.home .library .artist p{
+.home .library .artist div{
     background-color: #2a2a2a;
     border-radius: 3rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
+    transition: 200ms;
 }
-.home .library .artist p:hover {
+.home .library .artist div:hover {
     background-color: rgb(139, 139, 139);
 }
 
@@ -85,4 +102,88 @@ nav .right .premium:hover {
 }
 .home .library .library-card img{
     border-radius: 0.5rem;
+}
+
+/* music */
+.music {
+    flex: 2;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    height: 39rem;
+}
+
+.music nav {
+    display: flex;
+}
+
+.music nav > div {
+    border-radius: 3rem;
+    background-color: #2a2a2a;
+    padding: 0.5rem 1rem;
+}
+
+.music .popular-card {
+    display: flex;
+}
+.music .popular-card img{
+    border-radius: 0.5rem;
+}
+.music .music-card{
+    display: flex;
+}
+
+.card {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.card:hover {
+    background-color: rgb(30, 30, 30);
+}
+.card img{
+    width: 9.5rem;
+    border-radius: 0.5rem;
+}
+
+.music .made-card{
+    display: flex;
+}
+
+/* more */
+.more {
+    background: none;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    height: 39rem;
+}
+
+.more .card {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    padding-right: 7rem;
+}
+
+.more .card > div{
+    margin: 1rem 0;
+}
+
+.about-artist img {
+    border-radius: 100%;
+    width: 4rem;
+}
+
+.more .queue-card {
+    display: flex;
+}
+.more .queue-card img{
+    width: 4rem;
+}
+
+/* webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
 }
