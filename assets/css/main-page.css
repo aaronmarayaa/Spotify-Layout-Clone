@@ -22,6 +22,7 @@
 }
 
 .main .topnav .logo .house {
+    cursor: pointer;
     padding: 0.7rem 0;
     transition: 300ms;
 }
@@ -54,9 +55,30 @@
     border-radius: 5rem;
     color: black;
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 .main .topnav .right .premium:hover {
     transform: scale(1.05);
+}
+
+.main .topnav .right {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+.main .topnav .right .profile img{
+    width: 3rem;
+    
+    border-radius: 15rem;
+    cursor: pointer;
+}
+.main .topnav .right .profile {
+   padding: 0.5rem 0.7rem;
+   border-radius: 20rem;
+   margin: 0.5rem 2rem;
+}
+.main .topnav .right .profile:hover {
+    background-color: rgb(42, 42, 42);
 }
 
 /* Home */
@@ -71,6 +93,8 @@
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0.5rem;
+    overflow-y: scroll;
+    height: 39rem;
 }
 
 /* library */
@@ -79,8 +103,12 @@
     color: rgb(159, 159, 159);
 }
 
-.library {
-    flex: 1;
+.home .library {
+    flex: 1; 
+}
+
+.home .library .library-title {
+    display: flex;
 }
 
 .home .library .artist {
@@ -90,7 +118,7 @@
     background-color: #2a2a2a;
     border-radius: 3rem;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
+    cursor: pointer;
     transition: 200ms;
 }
 .home .library .artist div:hover {
@@ -99,17 +127,20 @@
 
 .home .library .library-card {
     display: flex;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.home .library .library-card:hover {
+    background-color: rgb(32, 32, 32);
 }
 .home .library .library-card img{
     border-radius: 0.5rem;
+    width: 4rem;
 }
 
 /* music */
 .music {
     flex: 2;
-    overflow-y: scroll;
-    overflow-x: hidden; 
-    height: 39rem;
 }
 
 .music nav {
@@ -151,8 +182,7 @@
 /* more */
 .more {
     background: none;
-    overflow-y: scroll;
-    overflow-x: hidden; 
+    overflow-y: scroll; 
     height: 39rem;
 }
 

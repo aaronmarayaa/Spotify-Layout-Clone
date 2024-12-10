@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="assets/css/login.css">
 
         <link rel="stylesheet" href="assets/css/main-page.css">
+
+        <link rel="stylesheet" href="assets/css/audio.css">
     </head>
     <body>
         <section class="login" id="login">
@@ -68,12 +70,19 @@
                     <div class="premium">
                         Explore Premium
                     </div>
+                    <img src="assets/images/bell.png" alt="">
+                    <div class="profile">
+                        <img src="assets/images/playlist/profile4.jpg" alt=""  onclick="confirmLogout()">
+                    </div>
                 </div>
             </nav>
 
             <article class="home">
                 <div class="library">
-                    <div><h1>Your library</h1></div>
+                    <div class="library-title">
+                        <img src="assets/images/library-big.png" alt="">
+                        <h1>Your library</h1>
+                    </div>
                     <div class="artist">
                         <div>artist</div>
                         <div>Podcasts & Shows</div>
@@ -91,6 +100,34 @@
                         <div>
                             <h3>Your episodes</h3>
                             <p>Saved and downloaded episodes</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <img src="assets/images/playlist/profile1.jpg" alt="">
+                        <div>
+                            <h3>Your episodes</h3>
+                            <p>With Aizzy Sagana</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <img src="assets/images/playlist/profile2.jpg" alt="">
+                        <div>
+                            <h3>Your episodes</h3>
+                            <p>With Wella Montegrande</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <img src="assets/images/playlist/profile3.jpg" alt="">
+                        <div>
+                            <h3>For pregnants</h3>
+                            <p>With Beverly Sarmiento</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <img src="assets/images/playlist/profile4.jpg" alt="">
+                        <div>
+                            <h3>Your episodes</h3>
+                            <p>With Stephanie Alarcon</p>
                         </div>
                     </div>
                 </div>
@@ -229,6 +266,35 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </article>
+            <article class="audio-player">
+                <div>
+                    <div class="track-info">
+                        <img src="assets/images/sining-icon.webp" alt="Album Cover" class="album-cover">
+                        <div class="details">
+                            <h3 class="track-title">Sining (feat. Jay R)</h3>
+                            <p class="track-artist">Dionela, Jay R</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-progress">
+                    <div class="controls">
+                        <button class="control-btn"><img src="assets/images/previous.png" alt=""></button>
+                        <button class="control-btn"><img src="assets/images/play-button.png" alt=""></button>
+                        <button class="control-btn"><img src="assets/images/next.png" alt=""></button>
+                    </div>
+                    <div class="progress-container">
+                        <span class="current-time">0:00</span>
+                        <input type="range" class="progress-bar" min="0" max="100" value="0">
+                        <span class="total-time">3:18</span>
+                    </div>
+                </div>
+                <div>
+                    <audio controls class="audio-element">
+                        <source src="assets/images/Dionela - sining (Lyrics) ft. Jay R.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             </article>
         </main>

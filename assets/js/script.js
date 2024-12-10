@@ -26,6 +26,14 @@ function showMain(event) {
     }
 }
 
+function confirmLogout() {
+    let confirm_ = confirm("Are you sure you want to log out?")
+    if (confirm_) {
+        login.style.display = "flex"
+        main.style.display = "none"
+    }
+}
+
 function showPassword() {
     if(password.type === "password") {
         password.type = "text"
