@@ -1,5 +1,7 @@
 let main = document.getElementById('main')
 let login = document.getElementById('login')
+let music_section = document.getElementById('music-section')
+let all_section = document.getElementById('all-section')
 
 let correctUsername = "pane";
 let correctPassword = "pane";
@@ -21,7 +23,7 @@ function showMain(event) {
         login.style.display = "none"
         main.style.display = "block"
     } else {
-        alert("Invalid Email or Password!");
+        alert("Wrong username or Password!");
         return false;
     }
 }
@@ -40,4 +42,13 @@ function showPassword() {
     } else {
         password.type = "password"
     }
+}
+
+function showMusic() {
+    music_section.style.display = "block"
+    all_section.style.display = "none"
+}
+function showAll() {
+    music_section.style.display = "none"
+    all_section.style.display = "block"
 }
