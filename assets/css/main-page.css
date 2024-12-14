@@ -44,7 +44,6 @@
     background-color: #1f1f1f;
     border-radius: 3rem;
     width: 100%;
-    height: 100%;
     border: none;
     padding: 1rem;
     font-size: 1.2rem;
@@ -68,7 +67,6 @@
 }
 .main .topnav .right .profile img{
     width: 3rem;
-    
     border-radius: 15rem;
     cursor: pointer;
 }
@@ -84,7 +82,6 @@
 /* Home */
 .home {
     display: flex;
-    border-radius: 0.5rem;
     padding: 1rem;
 }
 
@@ -180,13 +177,8 @@
     border-radius: 0.5rem;
 }
 
-.music .made-card{
-    display: flex;
-}
-
 /* more */
 .more {
-    background: none;
     overflow-y: scroll; 
     height: 39rem;
 }
